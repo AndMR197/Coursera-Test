@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-size:15px;
+    font-family: 'Lucida Sans', 'Helvetica', 'Arial', 'Serif';
+}
+/* ************************* Header */
+.navbar-default {background-color:lightblue;}
+.navbar-default .container .navbar-brand {color:black;font-size: 2em;}
+/* Toggle items */
+.navbar-collapse li {background-color: white;}
+.navbar-collapse #item1, #item2, #item3 {color:black;font-size:1.3em;text-shadow: 1px 2px 5px gainsboro;}
+.navbar-collapse hr{margin:0;}
+/* ************************* Menu Title */
+.menu-item-title {
+    margin: 0 0 0.5em;
+    font-size: 2em;
+    border:0;
+}
+/* ************************* Sections Titles */
+h3{
+    position:absolute;
+    top:0; right:0;
+    padding:0.3em 0.5em;  
+    text-align:center;
+    border:1px solid black;
+    font-size: 1.5em;
+    color:white;
+    margin:0;
+}
+.section1 h3 {background-color:navy;}
+.section2 h3 {background-color:red;}
+.section3 h3 {background-color:purple;}
+
+/* ************************* Major Section Container */
+.main-section{padding:0 5%;margin:0 auto;}
+.main-section div {padding:0;}
+
+/* ************************* Section container */
+.section1, .section2, .section3 {
+    border:1px solid black;
+    background-color:rgb(194, 215, 228);
+    color: black;
+    box-shadow: 5px 10px 10px black;
+    position:relative;
+    padding:0;
+}
+.section1, .section2 {margin-bottom: 2em;}
+
+/* ************************* Section text */
+p {padding: 3em 1.5em 1em 1.5em;line-height: 1.2em;text-align: justify;}
+
+/* ****************************************************************** */
+/* **************************************************** Media Queries */
+@media (min-width:768px) {/* bootstrap sm class */
+    .section1, .section2, .section3 {overflow:auto;padding:0; margin:0;}
+    .main-section div {padding-right:1em;}
+    .main-section div:last-of-type {padding-top:1em;}
+}
+
+/* ******************************* Layout for Desktop View */
+@media (min-width:992px) {/* bootstrap md class */
+    .section1, .section2, .section3 {overflow:auto;height:870px;}
+    .main-section div:last-of-type {padding-top:0;}
+}
+
